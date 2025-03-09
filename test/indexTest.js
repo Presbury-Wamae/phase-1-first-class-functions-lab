@@ -7,17 +7,65 @@ describe('index.js', function () {
     expect(drivers, 'MAKE SURE YOUR ARRAY MANIPULATIONS ARE NON-DESTRUCTIVE').to.eql(['Antonia', 'Nuru', 'Amari', 'Mo']);
   });
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   describe('returnFirstTwoDrivers()', function () {
     it('should return a new array containing the first two drivers from the passed-in array', function () {
       expect(returnFirstTwoDrivers(drivers)).to.eql(['Antonia', 'Nuru']);
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe('returnLastTwoDrivers()', function () {
     it('should return an array of the last two drivers', function () {
       expect(returnLastTwoDrivers(['Antonia', 'Nuru', 'Amari', 'Mo'])).to.eql(['Amari', 'Mo']);
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   describe('selectingDrivers', function () {
     it('has the `returnFirstTwoDrivers` function to as its first element', function () {
@@ -35,6 +83,19 @@ describe('index.js', function () {
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe('createFareMultiplier()', function () {
     it('returns a function', function () {
       const fareMultiplier = createFareMultiplier(2);
@@ -49,6 +110,21 @@ describe('index.js', function () {
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe('fareDoubler()', function () {
     it('is a function', function () {
       expect(fareDoubler).to.be.a('function');
@@ -59,6 +135,27 @@ describe('index.js', function () {
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe('fareTripler()', function () {
     it('is a function', function () {
       expect(fareTripler).to.be.a('function');
@@ -68,6 +165,34 @@ describe('index.js', function () {
       expect(fareTripler(12)).to.eql(36);
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   describe('selectDifferentDrivers(arrayOfDrivers, function)', function () {
     it('returns the first two drivers when passed returnFirstTwoDrivers() as the second argument', function () {
